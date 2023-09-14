@@ -1,3 +1,4 @@
 # Resume
-[Resume](resume.pdf)
+[PDF](resume.pdf)
+
 Please hire me
