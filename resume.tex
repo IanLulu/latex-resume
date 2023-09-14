@@ -1,0 +1,145 @@
+\documentclass{article}
+
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=0.25in]{geometry}
+\usepackage{hyperref}
+
+
+\titleformat{\section}
+{\bfseries\Large} % 1st argument: formatting
+{} % numbering
+{0em} % indentation between numbering and text(?)
+{} % more stuff before the title but after the numbering(?not sure abt this one as well)
+[{\titlerule[1pt]}] % to have a line under the thing you're formatting, in this case sections
+
+
+\titleformat{\subsection}
+{\bfseries\large}
+{}
+{0em}
+{}
+
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{$\bullet$}
+{0.5em}
+{}
+
+
+\titlespacing{\subsubsection}
+{0em} % left margin
+{0em} % space before section(??)
+{0em} % space after section(?)
+
+
+\renewcommand{\maketitle}{
+    \begin{center}
+    {\bfseries\huge
+    %\theauthor
+    Ian Lulu}
+    
+    \vspace{0.25em}
+
+    Berwyn, IL {$\bullet$} +1 (708) 315-9423 {$\bullet$} \href{mailto:ianpatricklulu@gmail.com}{ianpatricklulu@gmail.com} {$\bullet$} \href{https://www.linkedin.com/in/ianlulu/}{LinkedIn} {$\bullet$} \href{https://github.com/IanLulu}{GitHub} {$\bullet$} \url{ianlulu.github.io}
+    {$\bullet$} US Citizen
+    
+    \end{center}
+}
+
+
+% made a command to make the in-built \romannumeral into uppercase
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+
+\begin{document}
+
+
+\title{R\'esum\'e}
+\author{Ian Patrick Amal Lulu}
+
+
+\maketitle
+\pagenumbering{gobble} % turns off page numbering (turkey lol)
+
+
+\section{Education}
+\subsection{University of Illinois Chicago (UIC) \hfill \textnormal{December 2022}}
+\vspace{-0.5em}
+\textit{\textbf{Bachelor of Science in Computer Science} \hfill GPA: 3.33/4.00}
+\\ % new line character in LaTeX
+\textbf{Organizations \& Awards:} SAE, ACM, Vehicle Electronics and Systems Engineering, Competitive Gaming Club, Google Developer Student Club, Dean's List
+\\
+\textbf{Relevant Coursework:} Object-Oriented Languages \& Environments, Intro to Data Science, Computer Graphics \RomanNumeralCaps{1}, \\ 
+%\indent\indent\indent\indent\indent\indent\indent\indent
+Computer Algorithms \RomanNumeralCaps{1}, Data Structures, Intro to Differential Equations, Applied Linear Algebra
+
+
+\section{Skills}
+\textbf{Programming Languages:} C, C++, Java, Python, C\#, JavaScript, HTML, CSS, SQL, {\LaTeX}, Scala, F\#, MATLAB, R
+\\
+\textbf{Software:} Visual Studio IDEs, JetBrains IDEs, Git, Linux, MATLAB, Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro, Autodesk CAD, Microsoft Office/365, Unity
+\\
+\textbf{Spoken Languages:} Tagalog (native) English (native), Spanish (elementary), Japanese (elementary)
+
+
+\section{Experience}
+\subsection{Electronic Visualization Laboratory @ UIC \hfill \textnormal{Chicago, IL}}
+\vspace{-0.5em}
+\textit{Undergraduate Researcher \hfill May 2022 -- June 2022}
+\\
+$\bullet$ Helped with organizing, documenting, and reworking the professor's urban development data visualization research project to make it open and accessible via the web.
+\\
+$\bullet$ Assessed technologies such as React, WebGL, WebXR, and Unity along with Python data visualization libraries such as GeoPandas, Pyrosm, etc. for porting the application to the web.
+\\
+$\bullet$ Planned to publish a paper on the project and submit it to the IEEE Computer Society's \href{https://www.computer.org/digital-library/magazines/cg/cfp-metaverse-virtual-worlds}{Call for Papers}.
+
+%\vspace{-0.5em}
+
+\subsection{Technology Solutions (IT @ UIC) \hfill \textnormal{Chicago, IL}}
+\vspace{-0.5em}
+\textit{Student Computer Specialist \hfill January 2020 -- December 2021}
+\\
+$\bullet$ Assisted network engineers with on-site support for computer networking issues in research labs, offices, classrooms, etc. throughout campus during the pandemic.
+\\
+$\bullet$ Utilized TeamDynamix to track, troubleshoot, and respond to help tickets regarding issues with the campus network.
+\\
+$\bullet$ Checked ethernet cable connections on network switches as well as client side.
+\\
+$\bullet$ Performed network activations and documented the locations and port numbers for smoother activations in the future.
+\\
+$\bullet$ Interfaced with Cisco switches through PuTTY and SSH; used Bash and Cisco IOS commands to interface with the ports.
+
+
+\section{Projects}
+\subsection{\href{https://github.com/IanLulu/simple-ray-tracer}{Simple Ray Tracer} (UIC Class Project)} %\hfill \textnormal{\textit{March 2022 -- May 2022}}}
+\vspace{-0.5em}
+$\bullet$ An interactive ray tracing program for a computer graphics class.
+\\
+$\bullet$ Implemented with JavaScript and WebGL and displayed on a web page using HTML, CSS, and a Python web server.
+\\
+$\bullet$ Loaded in a JSON file to create a scene with ray tracing effects and settings that users can adjust.
+
+\subsection{\href{https://github.com/uic-cs418/cs418-spring22-the-wild-card}{"The Impact of COVID-19"} (UIC Group Project)}
+\vspace{-0.5em}
+$\bullet$ Collaborated with 3 classmates to develop an end-to-end data visualization project on COVID-19 for a data science class.
+\\
+$\bullet$ Synthesized relevant data and applied data cleaning, EDA, visualization, and machine learning using various Python libraries such as pandas, scikit-learn, etc.
+\\
+$\bullet$ Used GitHub and Discord for team collaboration.
+\\
+$\bullet$ Presented analysis of details, issues, improvements, and main takeaways from the project to an audience.
+
+
+\section{Activities}
+\textbf{Society of Automotive Engineers (SAE @ UIC)} \hfill Fall 2021 -- Spring 2022
+\\
+$\bullet$ Helped with maintenance of Baja car for the Blizzard Baja 2022 competition.
+\\
+\textbf{St. Luke and St. Bernardine Parish Youth Group}, 2018 -- Present $\bullet$ Volunteering to raise funds for the youth group.
+
+
+\end{document}
