@@ -1,12 +1,13 @@
 %
-% My Resume - LaTeX version
+% My Resume - Revisions/Overhaul (V2)
 % written by Ian Lulu
+% © 2023-2024
 %
 % To do: 
-% = add icons to links?
+% - [ ] add icons to links?
 %
 % Sources: https://youtu.be/VjsX4tznW40?si=vSv164aqXVxFtoIG
-% Useful resource: https://linktr.ee/chrisjr404
+% Useful resources: https://linktr.ee/chrisjr404, https://ecc.uic.edu/career-tools/resume/, https://photos.app.goo.gl/bEvNLQvJcdg6JeEc6
 %
 
 \documentclass{article}
@@ -25,11 +26,11 @@
 
 
 \titleformat{\section}
-{\bfseries\Large} % 1st argument: formatting
+{\vspace{-4pt}\scshape\bfseries\Large} % 1st argument: formatting - \scshape = small caps text but it no worky for some reason 🤔🧐💭🤨
 {} % numbering
 {0em} % indentation between numbering and text(?)
 {} % more stuff before the title but after the numbering(?not sure abt this one as well)
-[{\titlerule[1pt]}] % to have a line under the thing you're formatting, in this case sections
+[{\titlerule[1pt]}\vspace{-4pt}] % to have a line under the thing you're formatting, in this case sections
 
 
 \titleformat{\subsection}
@@ -60,8 +61,7 @@
     
     \vspace{0.25em}
 
-    Berwyn, IL {$\bullet$} +1 (708) 315-9423 {$\bullet$} \href{mailto:ianpatricklulu@gmail.com}{\underline{ianpatricklulu@gmail.com}} {$\bullet$} \href{https://www.linkedin.com/in/ianlulu/}{\underline{LinkedIn}} {$\bullet$} \href{https://github.com/IanLulu}{\underline{GitHub}} {$\bullet$} \url{ianlulu.github.io}
-    {$\bullet$} US Citizen
+    Berwyn, IL {$\bullet$} (708) 315-9423 {$\bullet$} \href{mailto:ianpatricklulu@gmail.com}{\underline{ianpatricklulu@gmail.com}} {$\bullet$} \href{https://www.linkedin.com/in/ianlulu/}{\underline{LinkedIn}} {$\bullet$} \href{https://github.com/IanLulu}{\underline{GitHub}} {$\bullet$} \url{ianlulu.me}
     
     \end{center}
 }
@@ -83,16 +83,18 @@
 \pagenumbering{gobble} % turns off page numbering (turkey lol)
 
 
+\section{Summary}
+Computer Science graduate with strong technical and engineering skills in IT and software engineering.
+Possesses more than two years of hands-on work and research experience, working with computer networking and software development among others.
+Passionate about learning and thrive on working in high-impact projects.
+
+
 \section{Education}
-\subsection{University of Illinois Chicago (UIC) \hfill \textnormal{December 2022}}
+\subsection{University of Illinois Chicago (UIC) \hfill \textnormal{Chicago, IL}}
 \vspace{-0.5em}
-\textit{\textbf{Bachelor of Science in Computer Science} \hfill GPA: 3.33/4.00}
+\textit{\textbf{Bachelor of Science in Computer Science} \hfill December 2022}
 \\ % new line character in LaTeX
-\textbf{Organizations \& Awards:} SAE, ACM, Vehicle Electronics and Systems Engineering, Competitive Gaming Club, Google Developer Student Club, Dean's List
-\\
-\textbf{Relevant Coursework:} Object-Oriented Languages \& Environments, Intro to Data Science, Computer Graphics \RomanNumeralCaps{1}, \\ 
-%\indent\indent\indent\indent\indent\indent\indent\indent
-Computer Algorithms \RomanNumeralCaps{1}, Data Structures, Intro to Differential Equations, Applied Linear Algebra
+\textbf{Awards:} Dean's List, \textit{January 2019 -- May 2021}
 
 
 \section{Skills}
@@ -100,7 +102,9 @@ Computer Algorithms \RomanNumeralCaps{1}, Data Structures, Intro to Differential
 \\
 \textbf{Software:} Visual Studio IDEs, JetBrains IDEs, Git, Linux, Unity, MATLAB, Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro, Autodesk CAD, Microsoft Office/365
 \\
-\textbf{Spoken Languages:} Tagalog (native) English (native), Spanish (elementary), Japanese (elementary)
+\textbf{Frameworks:} React, Node.js, JUnit
+\\
+\textbf{Certifications:} Networking Foundations: Networking Basics - LinkedIn, \textit{February 2020}
 
 
 \section{Experience}
